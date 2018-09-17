@@ -1,0 +1,23 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "node-express书籍上的练习",
+  "main": "meadowlark.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfredli2017/Node-Express.git"
+  },
+  "author": "lihui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfredli2017/Node-Express/issues"
+  },
+  "homepage": "https://github.com/alfredli2017/Node-Express#readme"
+}
