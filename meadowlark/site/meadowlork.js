@@ -1,7 +1,19 @@
-var express = require('exprss');
+var express = require('express');
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
+
+//首页
+app.get('/', function(req, res) {
+	res.type('text/plain');
+	res.send('Meawlark travel');
+});
+
+//关于
+app.get('/about', function(req, res) {
+	res.type('text/plain');
+	res.send('About Meawlark travel');
+});
 
 //定制404页面
 app.use(function(req, res) {
