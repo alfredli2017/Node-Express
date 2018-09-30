@@ -6,6 +6,16 @@ app.engine('handlebars', handlebars.engine);
 app.set('views', __dirname + '/views')
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
+app.use(express.static(__dirname + '/public'));
+let fortunes = [
+   "one",
+   "two",
+   "three",
+   "four",
+   "five",
+   "six",
+   "seven"
+];
 
 
 //首页
@@ -27,8 +37,9 @@ app.get('/about', function(req, res) {
 	res.type('text/plain');
 	res.send('About Meawlark travel');
     */
+	var fort = fortunes[Math.floor(Math.random() * fortunes.length)]
 
-	res.render('about');
+	res.render('about', {fortune : fort});
 });
 
 //定制404页面
